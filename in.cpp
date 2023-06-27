@@ -7,4 +7,6 @@ int main(){
     cout<<"Tes 2";
 
     cout<<"tes 3";
+
+    cout<<"tes 4";
 }
