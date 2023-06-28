@@ -1,12 +1,10 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-    cout<<"tes";
-
-    cout<<"Tes 2";
-
-    cout<<"tes 3";
-
-    cout<<"tes 4";
-}
+struct Kamar {
+    int nomorKamar;
+    string kelas;
+    int kapasitas;
+    int harga;
+    bool tersedia;
+};
