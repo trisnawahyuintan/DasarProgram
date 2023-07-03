@@ -135,3 +135,19 @@ int main() {
             cout << "Masukkan Kapasitas Kamar yang ingin ditampilkan: ";
             cin >> kapasitas;
             cout<<endl;
+
+            tampilkanKamarDenganKapasitas(kapasitas);
+        } else if (pilihan == 3) {
+            string kelas;
+            cout << "Masukkan Kelas Kamar yang ingin ditampilkan (Standart/Deluxe/Luxury): ";
+            cin >> kelas;
+            cout<<endl;
+
+            tampilkanKamarDenganKelas(kelas);
+        } else if (pilihan == 4) {
+            tampilkanKamarDenganHargaRendahKeTinggi();
+        } 
+        else {
+            cout << "Pilihan tidak valid." << endl;
+        }
+        cout<<endl<<endl;
