@@ -14,7 +14,7 @@ struct Kamar {
 };
 
 Kamar hotel[10];
-int jumlahkamar=10;
+int jumlahKamar=10;
 
 void tampilkanDataKamar(){
     cout<<"      PROGRAM SEWA KAMAR HOTEL      "<<endl<<endl;
