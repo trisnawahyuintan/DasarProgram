@@ -151,3 +151,18 @@ int main() {
             cout << "Pilihan tidak valid." << endl;
         }
         cout<<endl<<endl;
+
+        cout << "Apakah ingin melihat lagi daftar kamar hotel kami? (y/n): ";
+        char jawaban;
+        cin >> jawaban;
+        cout<<endl;
+
+        if (jawaban == 'n' || jawaban == 'N') {
+            ulang = false;
+            cout << "Terima Kasih Telah Mengunjungi Hotel Kami!" << endl;
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
