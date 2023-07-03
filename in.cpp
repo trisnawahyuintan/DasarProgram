@@ -23,3 +23,22 @@ void tampilkanDataKamar(){
         cout<<"-------------------------------------------"<<endl;
     }
 }
+
+bool kamarTersedia(int nomorKamar) {
+    for (int i = 0; i < jumlahKamar; i++) {
+        if (hotel[i].nomorKamar == nomorKamar && hotel[i].tersedia) {
+            return true;
+        }
+    }
+    return false;
+}
+
+void sewaKamar(int nomorKamar) {
+    for (int i = 0; i < jumlahKamar; i++) {
+        if (hotel[i].nomorKamar == nomorKamar && hotel[i].tersedia) {
+            hotel[i].tersedia = false;
+            cout << "Kamar dengan Nomor " << nomorKamar << " berhasil disewa.";
+            return;
+        }
+    }
+    cout << "Kamar dengan Nomor " << nomorKamar << " tidak tersedia atau tidak ditemukan.";
