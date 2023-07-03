@@ -1,4 +1,8 @@
 #include<iostream>
+#include <string>
+#include <iomanip>
+#include <algorithm>
+
 using namespace std;
 
 struct Kamar {
@@ -89,3 +93,28 @@ void tampilkanKamarDenganHargaRendahKeTinggi() {
     }
 }
 
+int main() {
+    // Inisialisasi data kamar
+    hotel[0] = {101, "Standart", 2, 500000, true};
+    hotel[1] = {102, "Standart", 2, 500000, false};
+    hotel[2] = {201, "Deluxe", 4, 1000000, true};
+    hotel[3] = {202, "Deluxe", 4, 1000000, true};
+    hotel[4] = {301, "Luxury", 6, 1500000, false};
+    hotel[5] = {302, "Luxury", 6, 1500000, false};
+    hotel[6] = {401, "Standart", 2, 500000, true};
+    hotel[7] = {402, "Deluxe", 4, 1000000, true};
+    hotel[8] = {501, "Deluxe", 4, 1000000, false};
+    hotel[9] = {502, "Luxury", 6, 1500000, true};
+
+    bool ulang = true;
+    while (ulang) {
+        tampilkanDataKamar();
+    
+        int pilihan;
+        cout << "Pilihan Menu:" << endl;
+        cout << "1. Sewa Kamar" << endl;
+        cout << "2. Tampilkan Kamar dengan Kapasitas Tertentu" << endl;
+        cout << "3. Tampilkan Kamar dengan Kelas Tertentu" << endl;
+        cout << "4. Tampilkan Kamar dengan Harga Rendah ke Tinggi" << endl;
+        cout << "Masukkan pilihan: ";
+        cin >> pilihan;
