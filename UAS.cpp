@@ -118,3 +118,20 @@ int main() {
         cout << "4. Tampilkan Kamar dengan Harga Rendah ke Tinggi" << endl;
         cout << "Masukkan pilihan: ";
         cin >> pilihan;
+
+        if (pilihan == 1) {
+            int nomorKamar;
+            cout << "Masukkan Nomor Kamar yang ingin disewa: ";
+            cin >> nomorKamar;
+            cout<<endl;
+
+            if (kamarTersedia(nomorKamar)) {
+                sewaKamar(nomorKamar);
+            } else {
+                cout << "Kamar dengan Nomor " << nomorKamar << " tidak tersedia atau tidak ditemukan." <<endl;
+            }
+        } else if (pilihan == 2) {
+            int kapasitas;
+            cout << "Masukkan Kapasitas Kamar yang ingin ditampilkan: ";
+            cin >> kapasitas;
+            cout<<endl;
